@@ -1,0 +1,23 @@
+﻿@model IEnumerable<StudentMvcApp.Entities.DTOs.StudentDto>
+
+<h2>Students</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var s in Model)
+        {
+            <tr>
+                <td>@s.Name</td>
+                <td>@s.Age</td>
+                <td>@s.Course</td>
+            </tr>
+        }
+    </tbody>
+</table>
